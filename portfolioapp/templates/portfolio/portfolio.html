@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-
+    {% load static %}
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -15,18 +15,18 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href={% static 'css/styles.css' %}>
+    <link rel="stylesheet" href={% static "css/vendor.css" %}>
 
     <!-- script
     ================================================== -->
-    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+    <script defer src={% static "js/vendor/fontawesome/all.min.js" %}></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/RJ-logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/RJ-logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/RJ-logo.png">
+    <link rel="RJ-logo" sizes="180x180" href={% static "images/RJ-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href={% static "images/RJ-logo.png" %}>
+    <link rel="icon" type="image/png" sizes="16x16" href={% static "images/RJ-logo.png" %}>
     <link rel="manifest" href="site.webmanifest">
 
 </head>
@@ -110,7 +110,7 @@
 
         <div class="row">
             <div class="column large-3 tab-12">
-                <img class="s-about__pic" src="images/cropped_image.png" alt="">
+                <img class="s-about__pic" src={% static "images/cropped_image.png" alt="" %}>
             </div>
             <div class="column large-9 tab-12 s-about__content">
                 <h3>About Me</h3>
@@ -135,7 +135,7 @@
                         
                     </div>
                     <div class="column w-1000-stack">
-                        <a href="Raj-Resume.pdf" class="btn btn--download">
+                        <a href={% static "pdf/Raj-Resume.pdf" %} class="btn btn--download">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
                             Download CV
                         </a>
@@ -246,31 +246,31 @@
 
             <div class="column folio-item">
                 <a href="#modal-01" class="folio-item__thumb">
-                    <img src="images/LIVEWEATHERTHUMB.jpg" alt="">
+                    <img src={% static "images/LIVEWEATHERTHUMB.jpg" alt="" %}>
                 </a>
             </div> <!-- end folio-item -->
 
             <div class="column folio-item">
                 <a href="#modal-02" class="folio-item__thumb">
-                    <img src="images/ECOMMERCETHUMB.jpg" >
+                    <img src={% static "images/ECOMMERCETHUMB.jpg" %} >
                 </a>
             </div> <!-- end folio-item -->
 
             <div class="column folio-item">
                 <a href="#modal-03" class="folio-item__thumb">
-                    <img src="images/BLOGTHUMB.jpg" >
+                    <img src={% static "images/BLOGTHUMB.jpg" %} >
                 </a>
             </div> <!-- end folio-item -->
 
             <div class="column folio-item">
                 <a href="#modal-04" class="folio-item__thumb">
-                    <img src="images/TICTHUMB.jpg" >
+                    <img src={% static "images/TICTHUMB.jpg" %} >
                 </a>
             </div> <!-- end folio-item -->
 
             <div class="column folio-item">
                 <a href="#modal-05" class="folio-item__thumb">
-                    <img src="images/TEXTUTILSTHUMB.jpg" >
+                    <img src={% static "images/TEXTUTILSTHUMB.jpg"  %}>
                 </a>
             </div> <!-- end folio-item -->
 
@@ -281,7 +281,7 @@
         =========================================================== -->
         <div id="modal-01" hidden>
             <div class="modal-popup">
-                <img src="images/liveweathermain.png" alt="" />
+                <img src={% static "images/liveweathermain.png" alt=""  %}/>
     
                 <div class="modal-popup__desc">
                     <h5>Live Weather using API</h5>
@@ -297,7 +297,7 @@
 
         <div id="modal-02" hidden>
             <div class="modal-popup">
-                <img src="images/ecommercemain.png" alt="" />
+                <img src={% static "images/ecommercemain.png" alt="" %} />
     
                 <div class="modal-popup__desc">
                     <h5>E-Commerce Website</h5>
@@ -313,7 +313,7 @@
 
         <div id="modal-03" hidden>
             <div class="modal-popup">
-                <img src="images/blogmain.png" alt="" />
+                <img src={% static "images/blogmain.png" alt=""  %}/>
     
                 <div class="modal-popup__desc">
                     <h5>Blog website with User authentication </h5>
@@ -329,7 +329,7 @@
 
         <div id="modal-04" hidden>
             <div class="modal-popup">
-                <img src="images/Tictacmain.jpeg" alt="" />
+                <img src={% static "images/Tictacmain.jpeg" alt="" %} />
     
                 <div class="modal-popup__desc">
                     <h5>Tic-Tac-Toe in Python</h5>
@@ -346,7 +346,7 @@
         <div id="modal-05" hidden>
             <div class="modal-popup">
 
-                <img src="images/textutilsmain.png" alt="" />
+                <img src={% static "images/textutilsmain.png" alt="" %} />
     
                 <div class="modal-popup__desc">
                     <h5>Text Utils</h5>
@@ -447,8 +447,8 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src={% static "js/plugins.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
 
 </body>
 
