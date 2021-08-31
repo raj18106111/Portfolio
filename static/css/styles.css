@@ -4081,42 +4081,6 @@ input[type="button"].btn--primary:focus {
     padding: 0 4rem 1.2rem;
 }
 
-.modal-popup__cat {
-    list-style: none;
-    margin-left: 0;
-    font-size: var(--text-sm);
-    line-height: var(--vspace-0_5);
-    color: var(--color-text-light);
-    padding-left: calc(0.875 * var(--space));
-    position: relative;
-}
-
-.modal-popup__cat::before {
-    content: "";
-    display: block;
-    height: calc(0.625 * var(--space));
-    width: calc(0.625 * var(--space));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../images/icons/icon-tag.svg);
-    position: absolute;
-    left: 0;
-    top: -0.15em;
-}
-
-.modal-popup__cat li {
-    display: inline;
-    padding-left: 0;
-}
-
-.modal-popup__cat li::after {
-    content: ", ";
-}
-
-.modal-popup__cat li:last-child::after {
-    display: none;
-}
 
 .modal-popup__details {
     background-color: rgba(0, 0, 0, 0.3);
